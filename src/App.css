@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  margin: 0 auto;
+  padding: 50px 10%;
 }
 
 .App-logo {
@@ -22,6 +24,143 @@
 .App-link {
   color: #61dafb;
 }
+
+.user-img{
+  width: 100%;
+  position: relative;
+  margin: 15px 0;
+}
+.user-img > img{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#user-details-wrapper{
+  padding: 0 25px;
+  text-align: left;
+}
+
+.user-login{
+  color: #868383;
+  font-size: 16px;
+}
+.user-bio{
+  color: #868383;
+  font-size: 13px;
+}
+.click-bio{
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 0;
+  border: none;
+}
+.user-company{
+  margin-left: 25px;
+  font-size: 14px;
+}
+.user-location{
+  margin-left: 25px;
+  font-size: 14px;
+}
+.user-mail{
+  margin-left: 25px;
+  font-size: 14px;
+  color: #2349f7;
+}
+.fa{
+  width: 20px;
+}
+
+.user-repos{
+  display: flex;
+  justify-content: space-around;
+}
+.user-repos > .menu-list{
+  list-style-type: none;
+  color: #868383;
+  font-size: 16px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.menu-list.active{
+  color: #000000;
+  padding: 10px 0;
+  border-bottom: 3px solid orange;
+}
+
+.search-repo{
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+.user-inputs{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+select{
+  height: 35px;
+  width: 100%;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.new-add{
+  height: 35px;
+  width: 100%;
+  color: #ffffff;
+  background-color: #5cf508;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.user-repo-list{
+  text-align: left;
+  padding: 20px 0;
+}
+.repo-name{
+  font-size: 22px;
+  font-weight: bold;
+  color: #10089a;
+  margin: 0;
+}
+
+.user-repo-language::before {
+  content: "\2022";
+  color: #ffff00;
+  font-weight: bold;
+  display: inline-block;
+  vertical-align: middle;
+  width: 1em;
+  margin-left: 0rem;
+  font-size: 40px;
+}
+
+.user-repo-language{
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.repo-size{
+  float: left;
+  margin-left: 20px;
+}
+
+.repo-updated{
+  float: left;
+  margin-left: 20px;
+}
+.user-repo-detail{
+  display: flex;
+  align-items: center;
+}
+
 
 @keyframes App-logo-spin {
   from {
